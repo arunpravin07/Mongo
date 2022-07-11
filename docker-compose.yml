@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  mongodb_container:
+    restart: always
+    image: mongo:5.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: arun
+    ports:
+      - "10.0.0.10:27017:27017"
+    volumes:
+      - /opt/mongo/db:/data/db
+      - /opt/mongo/configdb:/data/configdb

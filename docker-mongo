@@ -1,0 +1,4 @@
+#mongo bash install
+
+#mongo connect
+mongosh --host 20.222.77.219  --port 27017 -username root --authenticationDatabase admin
